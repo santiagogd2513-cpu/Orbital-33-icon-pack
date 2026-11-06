@@ -1,2 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android"><item><shape android:shape="oval"><gradient android:angle="135" android:startColor="#4285F4" android:centerColor="#2F65C8" android:endColor="#142B55"/><stroke android:width="1dp" android:color="#66FFFFFF"/></shape></item><item><vector android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108"><path android:fillColor="#FFFFFF" android:pathData="M26 29 L54 48 L82 29 L88 38 L60 57 L60 82 H48 V57 L20 38 Z"/><path android:fillColor="#34A853" android:pathData="M25 64 H39 V78 H25 Z"/><path android:fillColor="#EA4335" android:pathData="M69 64 H83 V78 H69 Z"/></vector></item><item android:drawable="@drawable/orb_generic_gloss"/></layer-list>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item><shape android:shape="oval"><gradient android:type="radial" android:gradientRadius="90dp" android:centerX="32%" android:centerY="22%" android:startColor="#7AB6FF" android:centerColor="#2868C7" android:endColor="#10264D"/><stroke android:width="1dp" android:color="#88FFFFFF"/></shape></item>
+    <item><vector android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108">
+        <path android:fillColor="#FFFFFF" android:pathData="M23,30 C23,26 26,23 30,23 H78 C82,23 85,26 85,30 V76 C85,80 82,83 78,83 H30 C26,83 23,80 23,76 Z"/>
+        <path android:fillColor="#2878E5" android:pathData="M33,35 H75 V71 H33 Z"/>
+        <path android:fillColor="#34A853" android:pathData="M35,27 L45,27 L40,35 L30,35 Z"/>
+        <path android:fillColor="#FBBC04" android:pathData="M45,27 L55,27 L50,35 L40,35 Z"/>
+        <path android:fillColor="#EA4335" android:pathData="M55,27 L65,27 L60,35 L50,35 Z"/>
+        <path android:fillColor="#4285F4" android:pathData="M65,27 L75,27 L70,35 L60,35 Z"/>
+        <path android:fillColor="#FFFFFF" android:pathData="M47,42 L66,53 L47,64 Z"/>
+    </vector></item>
+    <item android:drawable="@drawable/orb_generic_gloss"/>
+</layer-list>

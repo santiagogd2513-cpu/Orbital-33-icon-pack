@@ -1,1 +1,11 @@
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android"><item><shape android:shape="oval"><gradient android:angle="135" android:startColor="#111111" android:centerColor="#111111" android:endColor="#101827"/><stroke android:width="1dp" android:color="#66FFFFFF"/></shape></item><item><vector android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108"><path android:fillColor="#FFFFFF" android:pathData="M25 20 H43 L83 88 H65 Z M65 20 H83 L43 88 H25 Z"/></vector></item><item android:drawable="@drawable/orb_generic_gloss"/></layer-list>
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item><shape android:shape="oval"><gradient android:type="radial" android:gradientRadius="90dp" android:centerX="35%" android:centerY="23%" android:startColor="#596579" android:centerColor="#182231" android:endColor="#05080D"/><stroke android:width="1dp" android:color="#88FFFFFF"/></shape></item>
+    <item><vector android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108">
+        <path android:fillColor="#FFFFFF" android:pathData="M28,24 L39,24 L77,84 L66,84 Z"/>
+        <path android:fillColor="#FFFFFF" android:pathData="M70,23 L82,23 L46,85 L34,85 Z"/>
+        <path android:fillColor="#FFFFFF" android:pathData="M70,23 L83,23 L83,36 L75,36 L75,31 L70,31 Z"/>
+        <path android:fillColor="#FFFFFF" android:pathData="M25,72 L33,72 L33,85 L25,85 Z"/>
+    </vector></item>
+    <item android:drawable="@drawable/orb_generic_gloss"/>
+</layer-list>

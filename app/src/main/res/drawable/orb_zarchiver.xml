@@ -1,2 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android"><item><shape android:shape="oval"><gradient android:angle="135" android:startColor="#F5B942" android:centerColor="#C77A23" android:endColor="#583016"/><stroke android:width="1dp" android:color="#66FFFFFF"/></shape></item><item><vector android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108"><path android:fillColor="#FFF4D6" android:pathData="M24 26 H84 V39 H24 Z M24 43 H84 V82 H24 Z"/><path android:fillColor="#9B5A20" android:pathData="M35 50 H73 V57 H35 Z M35 63 H73 V70 H35 Z"/><path android:fillColor="#FFFFFF" android:pathData="M43 19 H65 V28 H43 Z"/></vector></item><item android:drawable="@drawable/orb_generic_gloss"/></layer-list>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item><shape android:shape="oval"><gradient android:type="radial" android:gradientRadius="90dp" android:centerX="34%" android:centerY="22%" android:startColor="#FFE18A" android:centerColor="#D99532" android:endColor="#603414"/><stroke android:width="1dp" android:color="#88FFFFFF"/></shape></item>
+    <item><vector android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108">
+        <path android:fillColor="#E9F0F7" android:pathData="M27,27 H43 V79 H27 Z"/>
+        <path android:fillColor="#55B86A" android:pathData="M44,27 H60 V79 H44 Z"/>
+        <path android:fillColor="#4D8FE8" android:pathData="M61,27 H77 V79 H61 Z"/>
+        <path android:fillColor="#FFFFFF" android:pathData="M24,38 H81 V47 H24 Z M24,62 H81 V71 H24 Z"/>
+        <path android:fillColor="#B8C2D0" android:pathData="M24,24 H81 V32 H24 Z M24,76 H81 V84 H24 Z"/>
+    </vector></item>
+    <item android:drawable="@drawable/orb_generic_gloss"/>
+</layer-list>

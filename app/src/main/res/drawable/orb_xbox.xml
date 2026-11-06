@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android"><item><shape android:shape="oval"><gradient android:angle="135" android:startColor="#27B34A" android:centerColor="#107C10" android:endColor="#063D0A"/><stroke android:width="1dp" android:color="#77FFFFFF"/></shape></item><item><vector android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108"><path android:fillColor="#FFFFFF" android:pathData="M25 31 C35 20 47 24 54 31 C61 24 73 20 83 31 C74 40 65 50 54 65 C43 50 34 40 25 31 Z M27 74 C39 59 47 52 54 47 C61 52 69 59 81 74 C71 88 61 91 54 91 C47 91 37 88 27 74 Z"/></vector></item><item android:drawable="@drawable/orb_generic_gloss"/></layer-list>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item><shape android:shape="oval"><gradient android:type="radial" android:gradientRadius="90dp" android:centerX="35%" android:centerY="25%" android:startColor="#72E68B" android:centerColor="#107C10" android:endColor="#063B13"/><stroke android:width="1dp" android:color="#88FFFFFF"/></shape></item>
+    <item><vector android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108">
+        <path android:fillColor="#FFFFFF" android:pathData="M25,29 C36,21 47,27 54,34 C61,27 72,21 83,29 C78,39 68,51 54,66 C40,51 30,39 25,29 Z"/>
+        <path android:fillColor="#FFFFFF" android:pathData="M25,76 C34,62 44,52 54,45 C64,52 74,62 83,76 C75,87 65,92 54,92 C43,92 33,87 25,76 Z"/>
+    </vector></item>
+    <item android:drawable="@drawable/orb_generic_gloss"/>
+</layer-list>
