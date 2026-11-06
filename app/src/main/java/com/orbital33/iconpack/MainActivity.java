@@ -89,7 +89,7 @@ public class MainActivity extends Activity {
         scroll.addView(grid);
         root.addView(scroll, new LinearLayout.LayoutParams(-1, 0, 1));
 
-        TextView note = text("60 asociaciones de aplicaciones y 1.500 diseños Orbital originales disponibles en el catálogo de iconos.", 12, Color.LTGRAY, false);
+        TextView note = text("317 asociaciones de aplicaciones y 1.500 diseños Orbital originales disponibles en el catálogo de iconos.", 12, Color.LTGRAY, false);
         note.setPadding(dp(8), dp(14), dp(8), dp(8));
         root.addView(note);
         setContentView(root);
