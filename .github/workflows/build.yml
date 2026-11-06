@@ -57,13 +57,13 @@ jobs:
               assert (root / "drawable" / (drawable + ".xml")).is_file(), f"Missing drawable resource: {drawable}"
           print(f"Validated {len(items)} unique app mappings and all drawable resources")
           catalog = ET.parse(root / "xml/drawable.xml").getroot().findall("item")
-          orbital_catalog = [name for name in catalog_names if name.startswith("orb_1500_")]
-assert len(orbital_catalog) == 1500, f"Expected 1500 Orbital designs, found {len(orbital_catalog)}"
           catalog_names = [item.attrib.get("drawable", "") for item in catalog]
-          assert len(set(catalog_names)) == 1500, "Duplicate catalog drawable"
+          orbital_catalog = [name for name in catalog_names if name.startswith("orb_1500_")]
+          assert len(orbital_catalog) == 1500, f"Expected 1500 Orbital designs, found {len(orbital_catalog)}"
+          assert len(set(catalog_names)) == len(catalog_names), "Duplicate catalog drawable"
           for drawable in catalog_names:
               assert (root / "drawable" / (drawable + ".xml")).is_file(), f"Missing catalog drawable: {drawable}"
-          print(f"Validated {len(catalog)} additional catalog icons and their drawable resources")
+          print(f"Validated {len(catalog)} catalog icons, including {len(orbital_catalog)} Orbital designs")
           PY
       - name: Build debug APK
         run: gradle assembleDebug --no-daemon --stacktrace
