@@ -40,6 +40,23 @@ jobs:
           test -f app/build.gradle
           test -f app/src/main/AndroidManifest.xml
           test -f app/src/main/java/com/orbital33/iconpack/MainActivity.java
+          python3 - <<'PY'
+          import pathlib, xml.etree.ElementTree as ET
+          root = pathlib.Path("app/src/main/res")
+          tree = ET.parse(root / "xml/appfilter.xml")
+          items = tree.getroot().findall("item")
+          assert items, "appfilter.xml has no icon mappings"
+          seen = set()
+          for item in items:
+              component = item.attrib.get("component", "")
+              drawable = item.attrib.get("drawable", "")
+              assert component.startswith("ComponentInfo{") and component.endswith("}"), f"Invalid component: {component}"
+              assert component not in seen, f"Duplicate component: {component}"
+              seen.add(component)
+              assert drawable, f"Missing drawable attribute for {component}"
+              assert (root / "drawable" / (drawable + ".xml")).is_file(), f"Missing drawable resource: {drawable}"
+          print(f"Validated {len(items)} unique app mappings and all drawable resources")
+          PY
       - name: Build debug APK
         run: gradle assembleDebug --no-daemon --stacktrace
       - name: Verify APK
