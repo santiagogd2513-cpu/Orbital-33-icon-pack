@@ -1,0 +1,9 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/orb_sphere_blue" />
+    <item>
+        <vector android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108">
+            <path android:fillColor="#FFEB00" android:pathData="M54,23 C43,23 38,31 39,43 C34,42 31,39 27,38 L25,46 C30,48 34,50 38,51 C36,62 31,68 24,70 L27,78 C39,76 43,84 54,84 C65,84 69,76 81,78 L84,70 C77,68 72,62 70,51 C74,50 78,48 83,46 L81,38 C77,39 74,42 69,43 C70,31 65,23 54,23 Z" />
+        </vector>
+    </item>
+    <item android:drawable="@drawable/orb_generic_gloss" />
+</layer-list>
