@@ -60,10 +60,4 @@
     <item component="ComponentInfo{com.booking/com.booking.MainActivity}" drawable="orb_booking" />
     <item component="ComponentInfo{com.paypal.android.p2pmobile/com.paypal.android.p2pmobile.MainActivity}" drawable="orb_paypal" />
     <item component="ComponentInfo{com.waze/com.waze.MainActivity}" drawable="orb_waze" />
-    <item component="ComponentInfo{com.yandex.browser/com.yandex.browser.MainActivity}" drawable="orb_yandex" />
-    <item component="ComponentInfo{com.brave.browser/com.brave.browser.MainActivity}" drawable="orb_brave" />
-    <item component="ComponentInfo{org.mozilla.firefox/org.mozilla.firefox.MainActivity}" drawable="orb_firefox" />
-    <item component="ComponentInfo{ch.protonmail.android/ch.protonmail.android.MainActivity}" drawable="orb_protonmail" />
-    <item component="ComponentInfo{com.x8bit.bitwarden/com.x8bit.bitwarden.MainActivity}" drawable="orb_bitwarden" />
-    <item component="ComponentInfo{com.azure.authenticator/com.azure.authenticator.MainActivity}" drawable="orb_authenticator" />
 </resources>
