@@ -56,6 +56,13 @@ jobs:
               assert drawable, f"Missing drawable attribute for {component}"
               assert (root / "drawable" / (drawable + ".xml")).is_file(), f"Missing drawable resource: {drawable}"
           print(f"Validated {len(items)} unique app mappings and all drawable resources")
+          catalog = ET.parse(root / "xml/drawable.xml").getroot().findall("item")
+          assert len(catalog) == 1500, f"Expected 1500 catalog icons, found {len(catalog)}"
+          catalog_names = [item.attrib.get("drawable", "") for item in catalog]
+          assert len(set(catalog_names)) == 1500, "Duplicate catalog drawable"
+          for drawable in catalog_names:
+              assert (root / "drawable" / (drawable + ".xml")).is_file(), f"Missing catalog drawable: {drawable}"
+          print(f"Validated {len(catalog)} additional catalog icons and their drawable resources")
           PY
       - name: Build debug APK
         run: gradle assembleDebug --no-daemon --stacktrace
