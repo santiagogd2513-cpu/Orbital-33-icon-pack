@@ -66,15 +66,26 @@ public class MainActivity extends Activity {
         root.addView(section, sectionParams);
 
         GridLayout grid = new GridLayout(this);
-        grid.setColumnCount(2);
+        grid.setColumnCount(3);
         grid.setUseDefaultMargins(true);
         grid.addView(tile(R.drawable.orb_dolphin, "Dolphin · azul"));
         grid.addView(tile(R.drawable.orb_generic, "Esfera genérica"));
+        grid.addView(tile(R.drawable.orb_chrome, "Chrome"));
+        grid.addView(tile(R.drawable.orb_gmail, "Gmail"));
+        grid.addView(tile(R.drawable.orb_maps, "Maps"));
+        grid.addView(tile(R.drawable.orb_youtube, "YouTube"));
+        grid.addView(tile(R.drawable.orb_playstore, "Play Store"));
+        grid.addView(tile(R.drawable.orb_whatsapp, "WhatsApp"));
+        grid.addView(tile(R.drawable.orb_instagram, "Instagram"));
+        grid.addView(tile(R.drawable.orb_spotify, "Spotify"));
+        grid.addView(tile(R.drawable.orb_telegram, "Telegram"));
+        grid.addView(tile(R.drawable.orb_discord, "Discord"));
+        grid.addView(tile(R.drawable.orb_netflix, "Netflix"));
         ScrollView scroll = new ScrollView(this);
         scroll.addView(grid);
         root.addView(scroll, new LinearLayout.LayoutParams(-1, 0, 1));
 
-        TextView note = text("Los iconos se aplican desde una app compatible. La detección en Samsung Theme Park debe confirmarse en el dispositivo.", 12, Color.LTGRAY, false);
+        TextView note = text("11 aplicaciones populares tienen iconos dedicados. La cobertura depende del nombre de paquete y actividad instalado en cada dispositivo.", 12, Color.LTGRAY, false);
         note.setPadding(dp(8), dp(14), dp(8), dp(8));
         root.addView(note);
         setContentView(root);
