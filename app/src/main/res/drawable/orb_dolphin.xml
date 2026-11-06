@@ -1,9 +1,4 @@
-<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108">
- <path android:fillColor="#FFFFFFFF" android:pathData="M54,5a49,49 0,1 0,0.1 0z"/>
- <path android:fillColor="#FFBCEBFF" android:pathData="M54,8a46,46 0,1 0,0.1 0z"/>
- <path android:fillColor="#FF168CE8" android:pathData="M17,57 C25,49 33,44 42,43 C51,42 59,46 66,52 C72,57 80,59 91,55 C86,66 77,72 66,71 C56,70 49,64 43,60 C35,55 27,56 17,63 Z"/>
- <path android:fillColor="#FF0860B7" android:pathData="M44,45 C47,33 58,25 68,24 C63,32 61,40 63,49 C57,46 51,44 44,45 Z"/>
- <path android:fillColor="#FF0860B7" android:pathData="M67,61 C75,69 81,78 82,87 C72,82 64,76 59,68 Z"/>
- <path android:fillColor="#FFFFFFFF" android:pathData="M72,49a2.4,2.4 0,1 0,0.1 0"/>
- <path android:fillColor="#FF07345F" android:pathData="M73,49a1.1,1.1 0,1 0,0.1 0"/>
-</vector>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/orb_sphere_blue" />
+    <item android:drawable="@drawable/orb_dolphin_mark" />
+</layer-list>
