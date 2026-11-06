@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.view.Gravity;
-import android.view.View;
 import android.widget.GridLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -81,11 +80,16 @@ public class MainActivity extends Activity {
         grid.addView(tile(R.drawable.orb_telegram, "Telegram"));
         grid.addView(tile(R.drawable.orb_discord, "Discord"));
         grid.addView(tile(R.drawable.orb_netflix, "Netflix"));
+        grid.addView(tile(R.drawable.orb_1500_0001, "Orbital 0001"));
+        grid.addView(tile(R.drawable.orb_1500_0002, "Orbital 0002"));
+        grid.addView(tile(R.drawable.orb_1500_0003, "Orbital 0003"));
+        grid.addView(tile(R.drawable.orb_1500_0004, "Orbital 0004"));
+        grid.addView(tile(R.drawable.orb_1500_0005, "Orbital 0005"));
         ScrollView scroll = new ScrollView(this);
         scroll.addView(grid);
         root.addView(scroll, new LinearLayout.LayoutParams(-1, 0, 1));
 
-        TextView note = text("11 aplicaciones populares tienen iconos dedicados. La cobertura depende del nombre de paquete y actividad instalado en cada dispositivo.", 12, Color.LTGRAY, false);
+        TextView note = text("60 asociaciones de aplicaciones y 1.500 diseños Orbital originales disponibles en el catálogo de iconos.", 12, Color.LTGRAY, false);
         note.setPadding(dp(8), dp(14), dp(8), dp(8));
         root.addView(note);
         setContentView(root);
