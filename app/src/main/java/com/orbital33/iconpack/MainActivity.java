@@ -1,6 +1,7 @@
 package com.orbital33.iconpack;
 
 import android.app.Activity;
+import android.content.res.XmlResourceParser;
 import android.os.Bundle;
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -14,6 +15,24 @@ import android.widget.TextView;
 public class MainActivity extends Activity {
     private int dp(float value) {
         return (int) (value * getResources().getDisplayMetrics().density + 0.5f);
+    }
+
+    private int countItems(int xmlResource) {
+        int count = 0;
+        XmlResourceParser parser = getResources().getXml(xmlResource);
+        try {
+            int event;
+            while ((event = parser.next()) != XmlResourceParser.END_DOCUMENT) {
+                if (event == XmlResourceParser.START_TAG && "item".equals(parser.getName())) {
+                    count++;
+                }
+            }
+        } catch (Exception ignored) {
+            return 0;
+        } finally {
+            parser.close();
+        }
+        return count;
     }
 
     private TextView text(String value, int size, int color, boolean bold) {
@@ -89,7 +108,12 @@ public class MainActivity extends Activity {
         scroll.addView(grid);
         root.addView(scroll, new LinearLayout.LayoutParams(-1, 0, 1));
 
-        TextView note = text("317 asociaciones de aplicaciones y 1.500 diseños Orbital originales disponibles en el catálogo de iconos.", 12, Color.LTGRAY, false);
+        int appMappings = countItems(R.xml.appfilter);
+        int catalogIcons = countItems(R.xml.drawable);
+        TextView note = text(
+            appMappings + " asociaciones de aplicaciones · " + catalogIcons + " iconos en el catálogo.",
+            12, Color.LTGRAY, false
+        );
         note.setPadding(dp(8), dp(14), dp(8), dp(8));
         root.addView(note);
         setContentView(root);
